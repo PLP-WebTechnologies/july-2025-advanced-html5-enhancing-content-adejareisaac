@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:05.000
+Hey, welcome! This video is all about getting your HTML captions set up properly.
+
+00:00:05.000 --> 00:00:10.000
+In the next few moments, you’ll see how easy it is to add subtitles to your projects.
+
+00:00:10.000 --> 00:00:15.000
+Captions help make your content accessible and way more professional.
+
+00:00:15.000 --> 00:00:20.000
+You can use .vtt files to sync text with your video timeline.
+
+00:00:20.000 --> 00:00:25.000
+Each caption has a start time, an end time, and the text you want displayed.
+
+00:00:25.000 --> 00:00:30.000
+Make sure your timestamps are clean and in the correct format.
+
+00:00:30.000 --> 00:00:35.000
+After that, just link the file in your <track> element in HTML.
+
+00:00:35.000 --> 00:00:40.000
+Once the browser loads it, boom — captions appear automatically.
+
+00:00:40.000 --> 00:00:45.000
+Remember, accessibility isn’t optional. It’s part of good web design.
+
+00:00:45.000 --> 00:00:50.000
+Keep experimenting and tweaking your caption timing for smooth reading.
+
+00:00:50.000 --> 00:00:55.000
+You're now ready to add captions to any video on your site.
+
+00:00:55.000 --> 00:01:00.000
+Thanks for watching — go build something fire.

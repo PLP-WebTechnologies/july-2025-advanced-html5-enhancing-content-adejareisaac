@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+		<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+		<title>HTML5 CONTENT & FORMS DEMO</title>
+</head>
+<body>
+				<!-- 
+HEADER TEXT
+
+Title:
+Enhanced HTML5 Content & Forms Demo
+
+Intro paragraph:
+Welcome! This page showcases the use of HTML5 content elements such as lists, tables, media, and a fully functional HTML5 form. The goal is to demonstrate structure, clarity, accessibility, and native form validation without JavaScript.
+
+
+---
+
+SECTION 1 — LISTS
+
+Heading:
+Popular Web Development Skills
+
+Paragraph:
+Below is a collection of essential skills every aspiring developer should be familiar with. These skills help improve structure, interactivity, and efficiency in web projects.
+
+Unordered List:
+
+HTML5 structure
+
+CSS styling
+
+Responsive design
+
+Accessibility best practices
+
+Basic debugging
+
+
+Ordered List (Steps):
+
+1. Plan your layout
+
+
+2. Structure your content
+
+
+3. Add styling
+
+
+4. Improve usability
+
+
+5. Test across devices
+
+
+
+
+---
+
+SECTION 2 — TABLE
+
+Heading:
+Summary of Web Technologies
+
+Paragraph:
+This table outlines common web technologies and their primary roles in modern development.
+
+Table content:
+
+Technology	Type	Purpose	Difficulty
+
+HTML5	Markup	Structure of web pages	Easy
+CSS3	Styling	Visual design & layout	Medium
+JavaScript	Scripting	Interactivity & logic	Medium
+SQL	Database	Data storage & querying	Medium
+
+
+
+---
+
+SECTION 3 — MEDIA
+
+Heading:
+Sample Multimedia Elements
+
+Paragraph:
+HTML5 makes it simple to embed various media formats directly into web pages, enhancing user engagement and clarity.
+
+Image caption:
+A sample web development illustration.
+
+Audio caption:
+A short audio sample.
+
+Video caption:
+A quick video demonstration.
+
+
+---
+
+
+
+
+---
+
+ -->
+		<header>
+				<h1>TITLE: <q>ENHANCED HTML5 CONTENT & FORMS</q></h1>
+				<p>This assignment focuses on how a web developer can elevate his/her HTML5 skills by working with advanced content elements and mastering the creation, structure, and validation of web forms. How they can use lists, tables, and media to enrich page content, and then dive deep into building dynamic, user-friendly forms powered by native HTML5 features.</p>
+		</header>
+		
+		<main>
+				<section class="lists">
+						<h2>LISTS</h2>
+						<article class="webdevelopers">
+								<h3>Popular Web Development Skills</h3>
+								<p>Below is a collection of essential skills every aspiring developer should be familiar with. These skills help improve structure, interactivity, and efficiency in web projects.</p>
+								<ul>
+										<li>HTML5 structure</li>
+										<li>CSS styling</li>
+										<li>Responsive design</li>
+										<li>Accessibility best practices</li>
+										<li>Basic debugging</li>
+								</ul>
+								
+								<h3>Simplified Steps to build a website</h3>
+								<ol>
+										<li>Plan your layout</li>
+										<li>Structure your content</li>
+										<li>Add styling</li>
+										<li>Improve usability</li>
+										<li>Test across devices</li>
+								</ol>
+						</article>
+				</section>
+				
+				<section class="tables">
+						<h2>Summary of Web Technologies</h2>
+						<p>This table outlines common web technologies and their primary roles in modern development.</p>
+						<table>
+								<thead>
+										<tr>
+												<th>Technology</th>
+												<th>Type</th>
+												<th>Purpose</th>
+												<th>Diffuculty</th>
+										</tr>
+								</thead>
+								<tbody>
+										<tr>
+												<td>HTML5</td>
+												<td>Markup</td>
+												<td>Structure of web pages</td>
+												<td>Easy</td>
+										</tr>
+										<tr>
+												<td>CSS3</td>
+												<td>Styling</td>
+												<td>Visual design & layout</td>
+												<td>Medium</td>
+										</tr>
+											<tr>
+												<td>JavaScript</td>
+												<td>Scripting</td>
+												<td>Interactivity & logic</td>
+												<td>Medium</td>
+										</tr>
+											<tr>
+												<td>SQL</td>
+												<td>Database</td>
+												<td>Data storage & querying</td>
+												<td>Medium</td>
+										</tr>
+								</tbody>
+						</table>
+				</section>
+				<section class="media">
+						<h3>Sample Multimedia Elements</h3>
+						<p>HTML5 makes it simple to embed various media formats directly into web pages, enhancing user engagement and clarity.</p>
+						<figure>
+								<img src="image.jpg" alt="This is example of an image">
+								<figcaption>A sample web development illustration.</figcaption>
+						</figure>
+						<figure>
+										<audio controls loop autoplay>
+										<source src="audio.mp3" type="audio/mpeg">
+										Your Browser does not support the audio element
+								</audio>
+								<figcaption>A short audio sample</figcaption>
+						</figure>
+						<figure>
+								<video controls loop>
+								<source src="video.mp4" type="video/mp4">
+								<track src="captions.vtt" kind="subtitles" lang="en" label="English">
+								Your Browser does not supoort the video element
+								</video>
+								<figcaption>A quick video demonstration</figcaption>
+						</figure>
+				</section>
+				<section class="form">
+						<h3>User Information Form</h3>
+						<p>The form below collects basic user information. All validation is handled using built-in HTML5 attributes.</p>
+						<form>
+										<fieldset class="personalinfo">
+												<legend>Personal Information</legend>
+												<label for="name">Name:</label>
+												<input type="text" name="name" id="name" required minlength="4" maxlength="40" placeholder="Jane Doe">
+												<br>
+												<label for="number">Phone Number:</label>
+												<input id="number" type="tel" pattern="\d+" title="Enter your Phone Number" required placeholder="08088888888"><br>
+												<label for="age">Age:</label>
+												<input id="age" type="number" min="16" max="75" pattern="\d{2}" placeholder="eg.25">
+												<div>
+														<p>Gender:</p>
+														<input id="gender" name="gender" value="male" type="radio">
+														<label for="gender">Male</label> <br>
+														<input id="gender" type="radio" name="gender" value="female">
+														<label for="gender">Female</label> <br>
+															<input id="gender" type="radio" name="gender" value="rather_not_say">
+														<label for="gender">Rather not say</label>
+														</div> 
+										<label for="country">Country:</label>
+										<select id="country" name="country" required>
+										  <option value="">Select your country</option>
+										  <option value="afghanistan">Afghanistan</option>
+										  <option value="albania">Albania</option>
+										  <option value="algeria">Algeria</option>
+										  <option value="andorra">Andorra</option>
+										  <option value="angola">Angola</option>
+										  <option value="antigua_and_barbuda">Antigua and Barbuda</option>
+										  <option value="argentina">Argentina</option>
+										  <option value="armenia">Armenia</option>
+										  <option value="australia">Australia</option>
+										  <option value="austria">Austria</option>
+										  <option value="azerbaijan">Azerbaijan</option>
+										  <option value="bahamas">Bahamas</option>
+										  <option value="bahrain">Bahrain</option>
+										  <option value="bangladesh">Bangladesh</option>
+										  <option value="barbados">Barbados</option>
+										  <option value="belarus">Belarus</option>
+										  <option value="belgium">Belgium</option>
+										  <option value="belize">Belize</option>
+										  <option value="benin">Benin</option>
+										  <option value="bhutan">Bhutan</option>
+										  <option value="bolivia">Bolivia</option>
+										  <option value="bosnia_and_herzegovina">Bosnia and Herzegovina</option>
+										  <option value="botswana">Botswana</option>
+										  <option value="brazil">Brazil</option>
+										  <option value="brunei">Brunei</option>
+										  <option value="bulgaria">Bulgaria</option>
+										  <option value="burkina_faso">Burkina Faso</option>
+										  <option value="burundi">Burundi</option>
+										  <option value="cabo_verde">Cabo Verde</option>
+										  <option value="cambodia">Cambodia</option>
+										  <option value="cameroon">Cameroon</option>
+										  <option value="canada">Canada</option>
+										  <option value="central_african_republic">Central African Republic</option>
+										  <option value="chad">Chad</option>
+										  <option value="chile">Chile</option>
+										  <option value="china">China</option>
+										  <option value="colombia">Colombia</option>
+										  <option value="comoros">Comoros</option>
+										  <option value="congo_brazzaville">Congo (Brazzaville)</option>
+										  <option value="congo_kinshasa">Congo (Kinshasa)</option>
+										  <option value="costa_rica">Costa Rica</option>
+										  <option value="croatia">Croatia</option>
+										  <option value="cuba">Cuba</option>
+										  <option value="cyprus">Cyprus</option>
+										  <option value="czech_republic">Czech Republic</option>
+										  <option value="denmark">Denmark</option>
+										  <option value="djibouti">Djibouti</option>
+										  <option value="dominica">Dominica</option>
+										  <option value="dominican_republic">Dominican Republic</option>
+										  <option value="ecuador">Ecuador</option>
+										  <option value="egypt">Egypt</option>
+										  <option value="el_salvador">El Salvador</option>
+										  <option value="equatorial_guinea">Equatorial Guinea</option>
+										  <option value="eritrea">Eritrea</option>
+										  <option value="estonia">Estonia</option>
+										  <option value="eswatini">Eswatini</option>
+										  <option value="ethiopia">Ethiopia</option>
+										  <option value="fiji">Fiji</option>
+										  <option value="finland">Finland</option>
+										  <option value="france">France</option>
+										  <option value="gabon">Gabon</option>
+										  <option value="gambia">Gambia</option>
+										  <option value="georgia">Georgia</option>
+										  <option value="germany">Germany</option>
+										  <option value="ghana">Ghana</option>
+										  <option value="greece">Greece</option>
+										  <option value="grenada">Grenada</option>
+										  <option value="guatemala">Guatemala</option>
+										  <option value="guinea">Guinea</option>
+										  <option value="guinea_bissau">Guinea-Bissau</option>
+										  <option value="guyana">Guyana</option>
+										  <option value="haiti">Haiti</option>
+										  <option value="honduras">Honduras</option>
+										  <option value="hungary">Hungary</option>
+										  <option value="iceland">Iceland</option>
+										  <option value="india">India</option>
+										  <option value="indonesia">Indonesia</option>
+										  <option value="iran">Iran</option>
+										  <option value="iraq">Iraq</option>
+										  <option value="ireland">Ireland</option>
+										  <option value="israel">Israel</option>
+										  <option value="italy">Italy</option>
+										  <option value="jamaica">Jamaica</option>
+										  <option value="japan">Japan</option>
+										  <option value="jordan">Jordan</option>
+										  <option value="kazakhstan">Kazakhstan</option>
+										  <option value="kenya">Kenya</option>
+										  <option value="kiribati">Kiribati</option>
+										  <option value="kuwait">Kuwait</option>
+										  <option value="kyrgyzstan">Kyrgyzstan</option>
+										  <option value="laos">Laos</option>
+										  <option value="latvia">Latvia</option>
+										  <option value="lebanon">Lebanon</option>
+										  <option value="lesotho">Lesotho</option>
+										  <option value="liberia">Liberia</option>
+										  <option value="libya">Libya</option>
+										  <option value="liechtenstein">Liechtenstein</option>
+										  <option value="lithuania">Lithuania</option>
+										  <option value="luxembourg">Luxembourg</option>
+										  <option value="madagascar">Madagascar</option>
+										  <option value="malawi">Malawi</option>
+										  <option value="malaysia">Malaysia</option>
+										  <option value="maldives">Maldives</option>
+										  <option value="mali">Mali</option>
+										  <option value="malta">Malta</option>
+										  <option value="marshall_islands">Marshall Islands</option>
+										  <option value="mauritania">Mauritania</option>
+										  <option value="mauritius">Mauritius</option>
+										  <option value="mexico">Mexico</option>
+										  <option value="micronesia">Micronesia</option>
+										  <option value="moldova">Moldova</option>
+										  <option value="monaco">Monaco</option>
+										  <option value="mongolia">Mongolia</option>
+										  <option value="montenegro">Montenegro</option>
+										  <option value="morocco">Morocco</option>
+										  <option value="mozambique">Mozambique</option>
+										  <option value="myanmar">Myanmar</option>
+										  <option value="namibia">Namibia</option>
+										  <option value="nauru">Nauru</option>
+										  <option value="nepal">Nepal</option>
+										  <option value="netherlands">Netherlands</option>
+										  <option value="new_zealand">New Zealand</option>
+										  <option value="nicaragua">Nicaragua</option>
+										  <option value="niger">Niger</option>
+										  <option value="nigeria">Nigeria</option>
+										  <option value="north_korea">North Korea</option>
+										  <option value="north_macedonia">North Macedonia</option>
+										  <option value="norway">Norway</option>
+										  <option value="oman">Oman</option>
+										  <option value="pakistan">Pakistan</option>
+										  <option value="palau">Palau</option>
+										  <option value="palestine">Palestine</option>
+										  <option value="panama">Panama</option>
+										  <option value="papua_new_guinea">Papua New Guinea</option>
+										  <option value="paraguay">Paraguay</option>
+										  <option value="peru">Peru</option>
+										  <option value="philippines">Philippines</option>
+										  <option value="poland">Poland</option>
+										  <option value="portugal">Portugal</option>
+										  <option value="qatar">Qatar</option>
+										  <option value="romania">Romania</option>
+										  <option value="russia">Russia</option>
+										  <option value="rwanda">Rwanda</option>
+										  <option value="saint_kitts_and_nevis">Saint Kitts and Nevis</option>
+										  <option value="saint_lucia">Saint Lucia</option>
+										  <option value="saint_vincent_and_the_grenadines">Saint Vincent and the Grenadines</option>
+										  <option value="samoa">Samoa</option>
+										  <option value="san_marino">San Marino</option>
+										  <option value="sao_tome_and_principe">Sao Tome and Principe</option>
+										  <option value="saudi_arabia">Saudi Arabia</option>
+										  <option value="senegal">Senegal</option>
+										  <option value="serbia">Serbia</option>
+										  <option value="seychelles">Seychelles</option>
+										  <option value="sierra_leone">Sierra Leone</option>
+										  <option value="singapore">Singapore</option>
+										  <option value="slovakia">Slovakia</option>
+										  <option value="slovenia">Slovenia</option>
+										  <option value="solomon_islands">Solomon Islands</option>
+										  <option value="somalia">Somalia</option>
+										  <option value="south_africa">South Africa</option>
+										  <option value="south_korea">South Korea</option>
+										  <option value="south_sudan">South Sudan</option>
+										  <option value="spain">Spain</option>
+										  <option value="sri_lanka">Sri Lanka</option>
+										  <option value="sudan">Sudan</option>
+										  <option value="suriname">Suriname</option>
+										  <option value="sweden">Sweden</option>
+										  <option value="switzerland">Switzerland</option>
+										  <option value="syria">Syria</option>
+										  <option value="taiwan">Taiwan</option>
+										  <option value="tajikistan">Tajikistan</option>
+										  <option value="tanzania">Tanzania</option>
+										  <option value="thailand">Thailand</option>
+										  <option value="timor_leste">Timor-Leste</option>
+										  <option value="togo">Togo</option>
+										  <option value="tonga">Tonga</option>
+										  <option value="trinidad_and_tobago">Trinidad and Tobago</option>
+										  <option value="tunisia">Tunisia</option>
+										  <option value="turkey">Turkey</option>
+										  <option value="turkmenistan">Turkmenistan</option>
+										  <option value="tuvalu">Tuvalu</option>
+										  <option value="uganda">Uganda</option>
+										  <option value="ukraine">Ukraine</option>
+										  <option value="united_arab_emirates">United Arab Emirates</option>
+										  <option value="united_kingdom">United Kingdom</option>
+										  <option value="united_states">United States</option>
+										  <option value="uruguay">Uruguay</option>
+										  <option value="uzbekistan">Uzbekistan</option>
+										  <option value="vanuatu">Vanuatu</option>
+										  <option value="vatican_city">Vatican City</option>
+										  <option value="venezuela">Venezuela</option>
+										  <option value="vietnam">Vietnam</option>
+										  <option value="yemen">Yemen</option>
+										  <option value="zambia">Zambia</option>
+										  <option value="zimbabwe">Zimbabwe</option>
+										</select>
+												<label for="bio">Bio:</label>
+												<textarea id="bio" name="bio" rows="4" cols="30" required></textarea> <br>
+										</fieldset>
+		
+										<fieldset class="biometricinfo">
+												<label for="email">Email:</label>
+												<input type="email" id="email" name="email" required title="Put your correct Email Address" placeholder="Put in your email address"><br>
+												<label for="password">Password:</label>
+												<input type="password" id="password" name="password" required minlength="8" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}" title="Your Password should contain at least 1 Uppercase, 1 Lowercase, 1 Number and should not be less than 8 Characters" placeholder="Place in your Password here">
+												<input type="text" value="I Consent to the Terms and Conditions" readonly>
+										</fieldset>
+										<button type="submit">Submit</button>
+						</form>
+				</section>
+		</main>
+		<footer>
+				<p>&copy; 2025 HTML5 Assignment Demo — Created by Adejare Isaac</p>
+		</footer>
+		
+</body>
+</html>
